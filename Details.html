@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    
+</head>
+<body>
+    <form>
+        Name: <p id="name"></p><br>
+        Email: <p id="email"></p><br>
+        Address: <p id="address"></p><br>
+        <script>            
+            document.getElementById("name").innerHTML=localStorage.getItem("name");
+            document.getElementById("email").innerHTML=localStorage.getItem("email");
+            document.getElementById("address").innerHTML=localStorage.getItem("address");
+        </script>
+    </form>
+</body>
+</html>
